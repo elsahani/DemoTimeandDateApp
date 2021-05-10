@@ -3,6 +3,7 @@ package sg.edu.rp.c346.id20023841.demotimeanddateapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -54,10 +55,9 @@ public class MainActivity extends AppCompatActivity {
                 tp.setCurrentHour(0);
                 tp.setCurrentMinute(0);
                 dp.updateDate(2020,0, 1 );
+                Log.d("MainActivity onCreate()", "Button reset clicked");
             }
         });
-
-
-
+        
     }
 }
